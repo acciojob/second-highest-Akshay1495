@@ -10,7 +10,7 @@
 	<script>
 		function secondHighest(arr) {
     if (arr.length < 2) {
-        return null;
+        return -Infinity;
     }
 
     let first = -Infinity;
@@ -25,8 +25,9 @@
         }
     }
 
-    return second === -Infinity ? null : second;
+    return second === -Infinity ? -Infinity : second;
 }
+
 
 
 		function Main() {
